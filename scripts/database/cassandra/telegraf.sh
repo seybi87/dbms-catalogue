@@ -10,7 +10,7 @@ sudo dpkg -i telegraf_$VERSION-1_amd64.deb
 
 service telegraf stop
 
-wget https://omi-gitlab.e-technik.uni-ulm.de/cloudiator/catalogue-scripts/raw/master/scripts/database/cassandra/telegraf.conf
+wget https://raw.githubusercontent.com/seybi87/dbms-catalogue/master/scripts/database/cassandra/telegraf.conf
 
 nohup telegraf --config telegraf.conf > telegraf.out 2>&1 &
 
